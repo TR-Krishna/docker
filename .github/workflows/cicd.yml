@@ -29,3 +29,4 @@ jobs:
           context: ./DemoOrder
           push: true
           tags: ghcr.io/tr-krishna/orderapi:latest
+          
