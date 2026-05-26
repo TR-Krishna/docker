@@ -1,0 +1,254 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\SESA845697\\source\\repos\\microservices_docker\\ApiMeter\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE2864-2B1D-083F-D541-708D861860A0}|ApiMeter.csproj|c:\\users\\sesa845697\\source\\repos\\microservices_docker\\apimeter\\services\\jwtservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE2864-2B1D-083F-D541-708D861860A0}|ApiMeter.csproj|solutionrelative:services\\jwtservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE2864-2B1D-083F-D541-708D861860A0}|ApiMeter.csproj|c:\\users\\sesa845697\\source\\repos\\microservices_docker\\apimeter\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE2864-2B1D-083F-D541-708D861860A0}|ApiMeter.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE2864-2B1D-083F-D541-708D861860A0}|ApiMeter.csproj|c:\\users\\sesa845697\\source\\repos\\microservices_docker\\apimeter\\models\\meter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE2864-2B1D-083F-D541-708D861860A0}|ApiMeter.csproj|solutionrelative:models\\meter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE2864-2B1D-083F-D541-708D861860A0}|ApiMeter.csproj|c:\\users\\sesa845697\\source\\repos\\microservices_docker\\apimeter\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE2864-2B1D-083F-D541-708D861860A0}|ApiMeter.csproj|solutionrelative:models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE2864-2B1D-083F-D541-708D861860A0}|ApiMeter.csproj|c:\\users\\sesa845697\\source\\repos\\microservices_docker\\apimeter\\dtos\\createdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE2864-2B1D-083F-D541-708D861860A0}|ApiMeter.csproj|solutionrelative:dtos\\createdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE2864-2B1D-083F-D541-708D861860A0}|ApiMeter.csproj|c:\\users\\sesa845697\\source\\repos\\microservices_docker\\apimeter\\controllers\\metercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE2864-2B1D-083F-D541-708D861860A0}|ApiMeter.csproj|solutionrelative:controllers\\metercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE2864-2B1D-083F-D541-708D861860A0}|ApiMeter.csproj|c:\\users\\sesa845697\\source\\repos\\microservices_docker\\apimeter\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE2864-2B1D-083F-D541-708D861860A0}|ApiMeter.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE2864-2B1D-083F-D541-708D861860A0}|ApiMeter.csproj|c:\\users\\sesa845697\\source\\repos\\microservices_docker\\apimeter\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{80CE2864-2B1D-083F-D541-708D861860A0}|ApiMeter.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE2864-2B1D-083F-D541-708D861860A0}|ApiMeter.csproj|c:\\users\\sesa845697\\source\\repos\\microservices_docker\\apimeter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE2864-2B1D-083F-D541-708D861860A0}|ApiMeter.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE2864-2B1D-083F-D541-708D861860A0}|ApiMeter.csproj|c:\\users\\sesa845697\\source\\repos\\microservices_docker\\apimeter\\dtos\\updatemeterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE2864-2B1D-083F-D541-708D861860A0}|ApiMeter.csproj|solutionrelative:dtos\\updatemeterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE2864-2B1D-083F-D541-708D861860A0}|ApiMeter.csproj|c:\\users\\sesa845697\\source\\repos\\microservices_docker\\apimeter\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE2864-2B1D-083F-D541-708D861860A0}|ApiMeter.csproj|solutionrelative:dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80CE2864-2B1D-083F-D541-708D861860A0}|ApiMeter.csproj|c:\\users\\sesa845697\\source\\repos\\microservices_docker\\apimeter\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80CE2864-2B1D-083F-D541-708D861860A0}|ApiMeter.csproj|solutionrelative:dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 25,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\SESA845697\\source\\repos\\microservices_docker\\ApiMeter\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\SESA845697\\source\\repos\\microservices_docker\\ApiMeter\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-26T06:55:00.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\SESA845697\\source\\repos\\microservices_docker\\ApiMeter\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\SESA845697\\source\\repos\\microservices_docker\\ApiMeter\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T06:54:43.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MeterController.cs",
+              "DocumentMoniker": "C:\\Users\\SESA845697\\source\\repos\\microservices_docker\\ApiMeter\\Controllers\\MeterController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MeterController.cs",
+              "ToolTip": "C:\\Users\\SESA845697\\source\\repos\\microservices_docker\\ApiMeter\\Controllers\\MeterController.cs",
+              "RelativeToolTip": "Controllers\\MeterController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T06:54:16.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\SESA845697\\source\\repos\\microservices_docker\\ApiMeter\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\SESA845697\\source\\repos\\microservices_docker\\ApiMeter\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T06:53:16.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "JwtServices.cs",
+              "DocumentMoniker": "C:\\Users\\SESA845697\\source\\repos\\microservices_docker\\ApiMeter\\Services\\JwtServices.cs",
+              "RelativeDocumentMoniker": "Services\\JwtServices.cs",
+              "ToolTip": "C:\\Users\\SESA845697\\source\\repos\\microservices_docker\\ApiMeter\\Services\\JwtServices.cs",
+              "RelativeToolTip": "Services\\JwtServices.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA4wCgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T06:52:41.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UpdateMeterDto.cs",
+              "DocumentMoniker": "C:\\Users\\SESA845697\\source\\repos\\microservices_docker\\ApiMeter\\DTOs\\UpdateMeterDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\UpdateMeterDto.cs",
+              "ToolTip": "C:\\Users\\SESA845697\\source\\repos\\microservices_docker\\ApiMeter\\DTOs\\UpdateMeterDto.cs",
+              "RelativeToolTip": "DTOs\\UpdateMeterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T06:52:03.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\SESA845697\\source\\repos\\microservices_docker\\ApiMeter\\DTOs\\CreateDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\CreateDto.cs",
+              "ToolTip": "C:\\Users\\SESA845697\\source\\repos\\microservices_docker\\ApiMeter\\DTOs\\CreateDto.cs",
+              "RelativeToolTip": "DTOs\\CreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T06:51:42.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\SESA845697\\source\\repos\\microservices_docker\\ApiMeter\\DTOs\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\RegisterDto.cs",
+              "ToolTip": "C:\\Users\\SESA845697\\source\\repos\\microservices_docker\\ApiMeter\\DTOs\\RegisterDto.cs",
+              "RelativeToolTip": "DTOs\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T06:50:55.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\SESA845697\\source\\repos\\microservices_docker\\ApiMeter\\DTOs\\LoginDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\SESA845697\\source\\repos\\microservices_docker\\ApiMeter\\DTOs\\LoginDto.cs",
+              "RelativeToolTip": "DTOs\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T06:50:38.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\SESA845697\\source\\repos\\microservices_docker\\ApiMeter\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\SESA845697\\source\\repos\\microservices_docker\\ApiMeter\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T06:50:27.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Meter.cs",
+              "DocumentMoniker": "C:\\Users\\SESA845697\\source\\repos\\microservices_docker\\ApiMeter\\Models\\Meter.cs",
+              "RelativeDocumentMoniker": "Models\\Meter.cs",
+              "ToolTip": "C:\\Users\\SESA845697\\source\\repos\\microservices_docker\\ApiMeter\\Models\\Meter.cs",
+              "RelativeToolTip": "Models\\Meter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T06:49:52.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\SESA845697\\source\\repos\\microservices_docker\\ApiMeter\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\SESA845697\\source\\repos\\microservices_docker\\ApiMeter\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T06:49:00.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 375,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
