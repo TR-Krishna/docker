@@ -1,0 +1,19 @@
+# Build folders
+
+bin/
+obj/
+publish/
+
+# Visual Studio
+.vs/
+*.user
+
+# Logs
+*.log
+
+# Environment
+.env
+
+# OS junk
+.DS_Store
+Thumbs.db

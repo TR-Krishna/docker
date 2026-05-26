@@ -1,0 +1,31 @@
+name: CI/CD Pipeline
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Login to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push Meter API
+        uses: docker/build-push-action@v5
+        with:
+          context: ./ApiMeter
+          push: true
+          tags: ghcr.io/tr-krishna/apimeter:latest
+
+      - name: Build and push Order API
+        uses: docker/build-push-action@v5
+        with:
+          context: ./DemoOrder
+          push: true
+          tags: ghcr.io/tr-krishna/orderapi:latest
