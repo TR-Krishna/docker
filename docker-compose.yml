@@ -1,8 +1,7 @@
-version: '3.8'
-
 services:
   apimeter:
-    build: ./ApiMeter
+    # build: ./ApiMeter
+    image: ghcr.io/tr-krishna/apimeter:latest
     container_name: apimeter
     ports:
       - "5000:8080"
@@ -14,7 +13,8 @@ services:
       - ConnectionStrings__DefaultConnection=Host=apimeter_db;Port=5432;Database=apimeter_db;Username=postgres;Password=password
 
   orderapi:
-    build: ./DemoOrder
+    # build: ./DemoOrder
+    image: ghcr.io/tr-krishna/orderapi:latest
     container_name: orderapi
     ports:
       - "5001:8080"
