@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiMeter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+944a433af80a9e7c6c821c02e385de713e41cc31")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiMeter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiMeter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -235,3 +235,4 @@ C:\Users\SESA845697\source\repos\microservices_docker\DemoOrder\obj\Debug\net8.0
 C:\Users\SESA845697\source\repos\microservices_docker\DemoOrder\obj\Debug\net8.0\DemoOrder.pdb
 C:\Users\SESA845697\source\repos\microservices_docker\DemoOrder\obj\Debug\net8.0\DemoOrder.genruntimeconfig.cache
 C:\Users\SESA845697\source\repos\microservices_docker\DemoOrder\obj\Debug\net8.0\ref\DemoOrder.dll
+C:\Users\SESA845697\source\repos\microservices_docker\DemoOrder\obj\Debug\net8.0\DemoOrder.sourcelink.json

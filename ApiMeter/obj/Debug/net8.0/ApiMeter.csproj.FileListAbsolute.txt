@@ -120,3 +120,4 @@ C:\Users\SESA845697\source\repos\microservices_docker\ApiMeter\obj\Debug\net8.0\
 C:\Users\SESA845697\source\repos\microservices_docker\ApiMeter\obj\Debug\net8.0\ApiMeter.pdb
 C:\Users\SESA845697\source\repos\microservices_docker\ApiMeter\obj\Debug\net8.0\ApiMeter.genruntimeconfig.cache
 C:\Users\SESA845697\source\repos\microservices_docker\ApiMeter\obj\Debug\net8.0\ref\ApiMeter.dll
+C:\Users\SESA845697\source\repos\microservices_docker\ApiMeter\obj\Debug\net8.0\ApiMeter.sourcelink.json
