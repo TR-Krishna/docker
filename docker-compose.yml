@@ -1,7 +1,8 @@
 services:
   apimeter:
     # build: ./ApiMeter
-    image: ghcr.io/tr-krishna/apimeter:latest
+    # image: ghcr.io/tr-krishna/apimeter:latest
+    image : tr-krishna/apimeter:latest
     container_name: apimeter
     ports:
       - "5000:8080"
@@ -14,7 +15,8 @@ services:
 
   orderapi:
     # build: ./DemoOrder
-    image: ghcr.io/tr-krishna/orderapi:latest
+    # image: ghcr.io/tr-krishna/orderapi:latest
+    image: tr-krishna/orderapi:latest
     container_name: orderapi
     ports:
       - "5001:8080"
