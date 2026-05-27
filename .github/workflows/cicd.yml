@@ -35,7 +35,7 @@ jobs:
           context: ./ApiMeter
           push: true
           # tags: ghcr.io/tr-krishna/apimeter:latest
-          tags: tr-krishna/apimeter:latest
+          tags: krishnatr/apimeter:latest
 
       - name: Build and push Order API
         uses: docker/build-push-action@v5
@@ -43,5 +43,5 @@ jobs:
           context: ./DemoOrder
           push: true
           # tags: ghcr.io/tr-krishna/orderapi:latest
-          tags: tr-krishna/orderapi:latest
+          tags: krishnatr/orderapi:latest
           
