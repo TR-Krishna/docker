@@ -5,9 +5,9 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
-# permissions:
-  # contents: read
-  # packages: write
+permissions:
+   contents: read
+   packages: write
 
 jobs:
   build-and-push:
@@ -16,34 +16,34 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Login to Docker Hub
+      # - name: Login to Docker Hub
+        # uses: docker/login-action@v3
+        # with:
+          # username: ${{ secrets.DOCKERHUB_USERNAME }}
+          # password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Login to GHCR
         uses: docker/login-action@v3
         with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
-
-      # - name: Login to GHCR
-      #   uses: docker/login-action@v3
-      #   with:
-      #     registry: ghcr.io
-      #     username: ${{ github.actor }}
-      #     password: ${{ secrets.GITHUB_TOKEN }}
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and push Meter API
         uses: docker/build-push-action@v5
         with:
           context: ./ApiMeter
           push: true
-          # tags: ghcr.io/tr-krishna/apimeter:latest
-          tags: krishnatr/apimeter:latest
+          tags: ghcr.io/tr-krishna/apimeter:latest
+          # tags: krishnatr/apimeter:latest
 
       - name: Build and push Order API
         uses: docker/build-push-action@v5
         with:
           context: ./DemoOrder
           push: true
-          # tags: ghcr.io/tr-krishna/orderapi:latest
-          tags: krishnatr/orderapi:latest
+          tags: ghcr.io/tr-krishna/orderapi:latest
+          # tags: krishnatr/orderapi:latest
           
   deploy : 
         runs-on : self-hosted
