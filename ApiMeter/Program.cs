@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -52,16 +53,16 @@ builder.Services.AddSwaggerGen(c =>
         Scheme = "bearer",
         BearerFormat = "JWT",
         In = ParameterLocation.Header,
-        Description = "JWT from UserManagementService. POST /api/ums/auth/token."
+        Description = "Enter Jwt Token"
     });
     c.AddSecurityRequirement(new OpenApiSecurityRequirement
     {
         { new OpenApiSecurityScheme { Reference = new OpenApiReference
             { Type = ReferenceType.SecurityScheme, Id = "Bearer" } }, Array.Empty<string>() }
     });
-    var xml = Path.Combine(AppContext.BaseDirectory,
-        $"{System.Reflection.Assembly.GetExecutingAssembly().GetName().Name}.xml");
-    if (File.Exists(xml)) c.IncludeXmlComments(xml);
+    //var xml = Path.Combine(AppContext.BaseDirectory,
+    //    $"{System.Reflection.Assembly.GetExecutingAssembly().GetName().Name}.xml");
+    //if (File.Exists(xml)) c.IncludeXmlComments(xml);
 });
 builder.Services.AddScoped<JwtServices>();
 
