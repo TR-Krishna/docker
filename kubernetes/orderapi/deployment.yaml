@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orderapi
+  namespace: microservices
+
+spec: 
+  replicas: 1
+  selector:
+    matchLabels:
+      app: orderapi
+  template:
+      metadata:
+        labels:
+          app: orderapi
+      spec:
+        containers:
+          - name: orderapi
+            image: ghcr.io/tr-krishna/orderapi:latest
+            imagePullPolicy: Always
+            ports:
+              - containerPort: 8080
+            env:
+              - name: ASPNETCORE_ENVIRONMENT
+                value: "Development"
+              - name: ConnectionStrings__DefaultConnection
+                valueFrom: 
+                  secretKeyRef:
+                    name: order-db-secret
+                    key: connection-string  

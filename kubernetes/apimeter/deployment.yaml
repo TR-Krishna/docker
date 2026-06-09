@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: apimeter-deployment
+  namespace: microservices
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: apimeter
+  template:                 
+    metadata:
+      labels:
+        app: apimeter
+    spec:
+      containers:
+        - name: apimeter
+          image: ghcr.io/tr-krishna/apimeter:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+          env:
+            - name: ASPNETCORE_ENVIRONMENT
+              value: "Development"
+            - name: ConnectionStrings__DefaultConnection
+              valueFrom:
+                secretKeyRef:
+                  name: apimeter-secret
+                  key: connection-string
