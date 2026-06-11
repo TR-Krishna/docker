@@ -55,3 +55,9 @@ jobs:
                 docker compose pull
                 docker compose up -d
                 docker compose ps     
+          - name : Deploy to Kubernetes
+            run : |
+                kubectl rollout restart deployment/apimeter-deployment -n microservices
+                kubectl rollout restart deployment/orderapi -n microservices
+                kuubectl rollout status deployment/apimeter-deployment -n microservices
+                kubectl rollout status deployment/orderapi -n microservices
