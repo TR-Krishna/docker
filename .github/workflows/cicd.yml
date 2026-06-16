@@ -28,6 +28,10 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+     
+      - name: Publish Meter API
+        run: dotnet publish ./ApiMeter/ApiMeter.csproj -c Release -o ./ApiMeter/publish
+
 
       - name: Build and push Meter API
         uses: docker/build-push-action@v5
@@ -36,6 +40,10 @@ jobs:
           push: true
           tags: ghcr.io/tr-krishna/apimeter:latest
           # tags: krishnatr/apimeter:latest
+      
+      - name: Publish Order API
+        run: dotnet publish ./DemoOrder/DemoOrder.csproj -c Release -o ./DemoOrder/publish
+
 
       - name: Build and push Order API
         uses: docker/build-push-action@v5

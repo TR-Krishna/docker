@@ -44,8 +44,14 @@ using (var scope = app.Services.CreateScope())
         }
     }
 }
+//app.UseSwagger();
+//app.UseSwaggerUI();
 app.UseSwagger();
-app.UseSwaggerUI();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Order API V1");
+    c.RoutePrefix = "swagger"; // access at /swagger instead of /api/order/swagger
+});
 app.UseRouting();
 app.UseAuthorization();
 app.UseAuthentication();

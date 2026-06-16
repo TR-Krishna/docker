@@ -3,61 +3,38 @@ kind: ConfigMap
 metadata:
     name: nginx-config
     namespace: microservices
-data: 
+data:
     nginx.conf: |
-        # events {}
+        events {}
 
-        # http {
-        #     upstream apimeter {
-        #         server apimeter-service:8080;
-        #     }
-        #     upstream orderapi{
-        #         server orderapi-service:8080;
-        #     }
-
-        #     server
-        #     {
-        #         listen 80;
-                
-        #          location /meter/ {
-        #             rewrite ^/meter/(.*) /$1 break;
-        #             proxy_pass http://apimeter;
-        #             proxy_set_header Host $host;
-        #             proxy_set_header X-Real-IP $remote_addr;
-        #         }
-
-        #         location /order/ {
-        #             rewrite ^/order/(.*) /$1 break;
-        #             proxy_pass http://orderapi;
-        #             proxy_set_header Host $host;
-        #             proxy_set_header X-Real-IP $remote_addr;
-        #         }
-        #   }
-        #  }
-         events {}
-
-         http {
+        http {
             upstream apimeter {
-                server apimeter-services:8080;
+                server apimeter-service:8080;
             }
 
             upstream orderapi {
-                server orderapi-services:8080;
+                server orderapi-service:8080;
             }
 
             server {
                 listen 80;
 
-                location /api/meter/swagger/ {
-                    proxy_pass http://apimeter/swagger/;
+                location /api/Auth/ {
+                    proxy_pass http://apimeter/api/Auth/;
                     proxy_set_header Host $host;
                     proxy_set_header X-Real-IP $remote_addr;
                 }
 
-                location /api/order/swagger/ {
-                    proxy_pass http://orderapi/swagger/;
-                    proxy_set_header Host $host;
-                    proxy_set_header X-Real-IP $remote_addr;
+                location /api/Meter/ {
+                  proxy_pass http://apimeter/api/Meter/;
+                  proxy_set_header Host $host;
+                  proxy_set_header X-Real-IP $remote_addr;
+                }
+
+                location /api/Order/ { 
+                  proxy_pass http://orderapi/api/Order/ ; 
+                  proxy_set_header Host $host;
+                  proxy_set_header X-Real-IP $remote_addr;
                 }
 
                 location /api/meter/ {
@@ -72,23 +49,16 @@ data:
                     proxy_set_header X-Real-IP $remote_addr;
                 }
 
-                location /api/Auth/ {
-                    proxy_pass http://apimeter/;
+                location /api/meter/swagger/ {
+                    proxy_pass http://apimeter/swagger/;
                     proxy_set_header Host $host;
                     proxy_set_header X-Real-IP $remote_addr;
                 }
 
-                location /api/Meter {
-                    proxy_pass http://apimeter;
+                location /api/order/swagger/ {
+                    proxy_pass http://orderapi/swagger/;
                     proxy_set_header Host $host;
                     proxy_set_header X-Real-IP $remote_addr;
                 }
-            
-                location /api/Order {
-                    proxy_pass http://orderapi;
-                    proxy_set_header Host $host;
-                    proxy_set_header X-Real-IP $remote_addr;
-                }
-
             }
         }
