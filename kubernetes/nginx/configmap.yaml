@@ -26,15 +26,15 @@ data:
                 }
 
                 location /api/Meter/ {
-                  proxy_pass http://apimeter/api/Meter/;
-                  proxy_set_header Host $host;
-                  proxy_set_header X-Real-IP $remote_addr;
+                    proxy_pass http://apimeter/api/Meter/;
+                    proxy_set_header Host $host;
+                    proxy_set_header X-Real-IP $remote_addr;
                 }
 
-                location /api/Order/ { 
-                  proxy_pass http://orderapi/api/Order/ ; 
-                  proxy_set_header Host $host;
-                  proxy_set_header X-Real-IP $remote_addr;
+                location /api/Order/ {
+                    proxy_pass http://orderapi/api/Order/;
+                    proxy_set_header Host $host;
+                    proxy_set_header X-Real-IP $remote_addr;
                 }
 
                 location /api/meter/ {
