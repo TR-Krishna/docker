@@ -38,11 +38,11 @@ data:
 
          http {
             upstream apimeter {
-                server apimeter:8080;
+                server apimeter-services:8080;
             }
 
             upstream orderapi {
-                server orderapi:8080;
+                server orderapi-services:8080;
             }
 
             server {
@@ -72,7 +72,7 @@ data:
                     proxy_set_header X-Real-IP $remote_addr;
                 }
 
-                location /api/Auth {
+                location /api/Auth/ {
                     proxy_pass http://apimeter/;
                     proxy_set_header Host $host;
                     proxy_set_header X-Real-IP $remote_addr;
