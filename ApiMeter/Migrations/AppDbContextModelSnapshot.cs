@@ -116,7 +116,7 @@ namespace ApiMeter.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Meters");
+                    b.ToTable("Meters", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
