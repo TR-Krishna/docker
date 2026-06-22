@@ -49,7 +49,7 @@ using (var scope = app.Services.CreateScope())
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Order API V1");
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "MeterManagementService V1");
     c.RoutePrefix = "swagger"; // access at /swagger instead of /api/order/swagger
 });
 app.UseRouting();
