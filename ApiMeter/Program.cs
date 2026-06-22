@@ -94,7 +94,11 @@ using (var scope = app.Services.CreateScope())
 }
 
 app.UseSwagger();
-app.UseSwaggerUI();
+app.UseSwaggerUI(c => 
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "UserManagementService V1");
+    c.RoutePrefix = "swagger";
+});
 app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
