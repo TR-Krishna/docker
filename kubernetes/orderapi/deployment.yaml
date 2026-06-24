@@ -27,4 +27,11 @@ spec:
                 valueFrom: 
                   secretKeyRef:
                     name: order-db-secret
-                    key: connection-string  
+                    key: connection-string 
+            resources:
+              requests: 
+                cpu: "100m"
+                memory: "128Mi"
+              limits:
+                cpu: "500m"
+                memory: "256Mi"
