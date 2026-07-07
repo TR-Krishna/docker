@@ -21,61 +21,61 @@ data:
 
                 location /api/Auth/ {
                     proxy_pass http://apimeter/api/Auth/;
-                    proxy_set_header Host $host;
+                    proxy_set_header Host $http_host;
                     proxy_set_header X-Real-IP $remote_addr;
                 }
 
                 location /api/Meter/ {
                     proxy_pass http://apimeter/api/Meter/;
-                    proxy_set_header Host $host;
+                    proxy_set_header Host $http_host;
                     proxy_set_header X-Real-IP $remote_addr;
                 }
 
                 location /api/Order/ {
                     proxy_pass http://orderapi/api/Order/;
-                    proxy_set_header Host $host;
+                    proxy_set_header Host $http_host;
                     proxy_set_header X-Real-IP $remote_addr;
                 }
 
                 location /api/meter/ {
                     proxy_pass http://apimeter/api/meter/;
-                    proxy_set_header Host $host;
+                    proxy_set_header Host $http_host;
                     proxy_set_header X-Real-IP $remote_addr;
                 }
 
                 location /api/order/ {
                     proxy_pass http://orderapi/api/order/;
-                    proxy_set_header Host $host;
+                    proxy_set_header Host $http_host;
                     proxy_set_header X-Real-IP $remote_addr;
                 }
 
                 location /api/order/swagger/ {
                     proxy_pass http://orderapi/swagger/;
-                    proxy_set_header Host $host;
+                    proxy_set_header Host $http_host;
                     proxy_set_header X-Real-IP $remote_addr;
-
+                    proxy_set_header Accept-Encoding "";
                     sub_filter '"/swagger/v1/swagger.json"' '"/api/order/swagger/v1/swagger.json"';
                     sub_filter_once on;
                 }
 
                 location /api/order/swagger/v1/ {
                     proxy_pass http://orderapi/swagger/v1/;
-                    proxy_set_header Host $host;
+                    proxy_set_header Host $http_host;
                     proxy_set_header X-Real-IP $remote_addr;
                 }
 
                 location /api/meter/swagger/ {
                     proxy_pass http://apimeter/swagger/;
-                    proxy_set_header Host $host;
+                    proxy_set_header Host $http_host;
                     proxy_set_header X-Real-IP $remote_addr;
-
+                    proxy_set_header Accept-Encoding "";
                     sub_filter '"/swagger/v1/swagger.json"' '"/api/meter/swagger/v1/swagger.json"';
                     sub_filter_once on;
                 }
 
                 location /api/meter/swagger/v1/ {
                     proxy_pass http://apimeter/swagger/v1/;
-                    proxy_set_header Host $host;
+                    proxy_set_header Host $http_host;
                     proxy_set_header X-Real-IP $remote_addr;
                 }
             }
