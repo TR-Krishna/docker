@@ -9,7 +9,7 @@ The concrete goals derived from this objective were:
 3. Set up a reverse proxy using Nginx to route API traffic. 
 4. Implement Docker Compose for local multi-container orchestration. 
 5. Portainer UI for container monitoring.
-6. CI/CD pipeline using GitHub Actions. 
+6. CI/CD pipeline using GitHub Actions.  
 7. Migrate the Docker Compose setup to Kubernetes using Minikube. 
 
 
